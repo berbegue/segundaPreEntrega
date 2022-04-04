@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,12 @@
     <link href="style.css" rel="stylesheet">
     <title>Document</title>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    </head>
+</head>
+
 <body>
 
     <a>
-        <img src="Imagen1.png" width="600" >
+        <img src="Imagen1.png" width="600">
     </a>
     <h1 id="title">SOLICITA TU PRÉSTAMO</h1>
     <h2 id="title">SIN INTERMEDIARIOS</h2>
@@ -19,39 +21,27 @@
         <div>
             <label>
                 <span>Nombre</span>
-                <input  id='name'
-                        type="text"
-                        autocomplete="on"
-                        name="usuario"/>
+                <input id="name" type="text" autocomplete="on" name="name" required/>
             </label>
         </div>
 
         <div>
             <label>
                 <span>Apellidos</span>
-                <input  id='lastname'
-                        type="text"
-                        autocomplete="on"
-                        name="clave"/>
-                
+                <input id='last' type="text" autocomplete="on" name="last" required/>
+
             </label>
         </div>
         <div>
             <label>
                 <span>Fecha de Nacimiento</span>
-                <input  id='dateOfBirth'
-                        type="date"
-                        autocomplete="on"
-                        name="fnac"/>
+                <input id="DoB" type="date" autocomplete="on" name="DoB" required/>
             </label>
         </div>
         <div>
             <label>
                 <span>DNI</span>
-                <input  id='dni' 
-                        type="text"
-                        autocomplete="on"
-                        name="dni"/>
+                <input id='dni' type="text" autocomplete="on" name="dni" required/>
             </label>
         </div>
     </form1>
@@ -59,53 +49,38 @@
         <div>
             <label>
                 <span>Teléfono celular</span>
-                <input  id='phoneNum'
-                        type="tel"
-                        autocomplete="on"
-                        name="cel"/>
+                <input id='phone' type="tel" autocomplete="on" name="phone" required/>
             </label>
         </div>
         <div>
             <label>
                 <span>Correo electronico</span>
-                <input  id='email' 
-                        type="email"
-                        autocomplete="on"
-                        name="mail"/>
+                <input id="email" type="email" autocomplete="on" name="email" required/>
             </label>
         </div>
         <div>
             <label>
                 <span>Ingreso Mensual</span>
-                <input  id='ingreso'
-                        type="number"
-                        autocomplete="off"
-                        name="ingreso"/>
+                <input id="ingreso" type="number" autocomplete="off" name="ingreso" required/>
             </label>
         </div>
         <div>
             <label>
                 <span>Plazo de otorgamiento</span>
-                <input  id="plazo"
-                        type="number"
-                        autocomplete="off"
-                        min="6"
-                        step="6"
-                        max="36"
-                        name="plazo"/>
+                <input id="plazo" type="number" autocomplete="off" min="6" step="6" max="36" name="plazo" required/>
             </label>
         </div>
 
     </form2>
-    <button class="button1" id="boton">OK</button>
+    <button type="submit" class="button1" id="boton">OK</button>
     <button class="button button2" id="boton2">RESET</button>
-    
-    
+
+
     <div2 id="lista"></div2>
+
+    <script src="Pre-Entrega/segundaPreEntregav2.js"></script>
    
-    <script src="segundaPreEntregav2.js">
-        
-    </script>
 
 </body>
+
 </html>
